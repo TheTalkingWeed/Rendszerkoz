@@ -1,0 +1,33 @@
+Rendszerközeli programozás projekt dokumentáció
+
+Parancssori argumentumok:
+--help:
+	parancssori argumentumok és azok magyarázatának a kilistázására szolgál
+
+--version:
+	a fejlesztő, progrsm készenléte és verziószámának kiírása
+-send:
+	SendViaFile()-eljárást meghívása;
+-receive
+	ReceiveViaFile()-eljárást meghívása;
+-send -file vagy -file -send
+	SendViaFile()-eljárást megħvása;
+-receive -file vagy -file -receive
+	ReceiveViaFile()-eljárást megħvása;
+-send -socket vagy -socket -send
+	SendViaSocket()-eljárást megħvása;
+-receive -socket vagy -socket -receive
+	ReceiveViaSocket()-eljárást megħvása;
+
+
+Measurement - létrehoz egy tömböt aminek a mérete az időtöl függ majd a kapott mérettel tér vissza.
+oszthato - az adott ertek oszható 32vel?
+megfelelo - ha tulmenne a BMP felso vagy also korlatan az ertek
+BMPcreator - a BMP fájl létrhozására szolgál
+SendViaFile - létrehozza a Measurement.txt-t beleirja a tomb tartalmat és 1es signált ad
+ReceiveViaFile - megkapja Measurement.txt-t, beolvassa az ertekeket egy tombe majd meghivja a BMPcreatort
+ReceiveViaSocket - a server része, mindig vár(végtelen ciklus), komunikál a kliensel majd meghivja a BMPcreatort.
+SendViaSocket - a kliens része, komunikál a szerverel, átadja a BMPcreatorhoz sükséges adatokat!
+
+
+Szolnoki Alex G18KLV
